@@ -47,19 +47,19 @@ class Formula
       class_eval(&block)
     end
   end
+
+  module BinaryTest
+    module_function
+
+    def assert_equal(expected, actual, message)
+      return if expected == actual
+
+      raise "#{message}: expected #{expected.inspect}, got #{actual.inspect}"
+    end
+  end
 end
 
 load File.expand_path("../Formula/grat.rb", __dir__)
-
-module FormulaBinaryTest
-  module_function
-
-  def assert_equal(expected, actual, message)
-    return if expected == actual
-
-    raise "#{message}: expected #{expected.inspect}, got #{actual.inspect}"
-  end
-end
 
 expected_assets = %w[
   grat_v1.1.1_darwin_amd64
@@ -74,14 +74,14 @@ expected_checksums = %w[
   ed6e3546b11e53c78933b4b2f45f99c12bde5780bf1cded682bab03132506623
 ]
 
-FormulaBinaryTest.assert_equal [], Grat.dependencies || [], "formula must not require Go"
-FormulaBinaryTest.assert_equal [], Grat.heads || [], "binary-only formula must not advertise a source head"
-FormulaBinaryTest.assert_equal(
+Formula::BinaryTest.assert_equal [], Grat.dependencies || [], "formula must not require Go"
+Formula::BinaryTest.assert_equal [], Grat.heads || [], "binary-only formula must not advertise a source head"
+Formula::BinaryTest.assert_equal(
   expected_assets.sort,
   Grat.urls.map { |url| File.basename(url) }.sort,
   "formula must declare every release binary",
 )
-FormulaBinaryTest.assert_equal(
+Formula::BinaryTest.assert_equal(
   expected_checksums.sort,
   Grat.checksums.sort,
   "formula checksums must match the published release assets",

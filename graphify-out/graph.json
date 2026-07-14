@@ -187,7 +187,7 @@
       "label": "assert_equal()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L57",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "test_formula_binary_test_assert_equal",
       "community": 0,
@@ -397,5 +397,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4463fd58074734af0c61f59c9945a608f19a4ed1"
+  "built_at_commit": "5900a15de0f1167a28e5f3ef1800955af2cec35c"
 }

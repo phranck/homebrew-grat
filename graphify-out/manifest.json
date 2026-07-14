@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "test/formula_binary_test.rb": {
-    "mtime": 1784037820.5667892,
-    "ast_hash": "7ecb8dcef8f01a8ab26816e3f68cf036",
+    "mtime": 1784038049.7781165,
+    "ast_hash": "ed5a7bf0eefdbef9a40d3c26c780fd4b",
     "semantic_hash": ""
   },
   ".github/workflows/publish.yml": {
