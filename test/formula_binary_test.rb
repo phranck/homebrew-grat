@@ -1,25 +1,23 @@
+# typed: strict
+# frozen_string_literal: true
+
 class Formula
   class << self
     attr_reader :urls, :checksums, :dependencies, :heads
 
-    def desc(*)
-    end
+    def desc(*) = nil
 
-    def homepage(*)
-    end
+    def homepage(*) = nil
 
-    def license(*)
-    end
+    def license(*) = nil
 
-    def version(*)
-    end
+    def version(*) = nil
 
     def head(value, **)
       (@heads ||= []) << value
     end
 
-    def test(*)
-    end
+    def test(*) = nil
 
     def url(value)
       (@urls ||= []) << value
@@ -53,10 +51,14 @@ end
 
 load File.expand_path("../Formula/grat.rb", __dir__)
 
-def assert_equal(expected, actual, message)
-  return if expected == actual
+module FormulaBinaryTest
+  module_function
 
-  raise "#{message}: expected #{expected.inspect}, got #{actual.inspect}"
+  def assert_equal(expected, actual, message)
+    return if expected == actual
+
+    raise "#{message}: expected #{expected.inspect}, got #{actual.inspect}"
+  end
 end
 
 expected_assets = %w[
@@ -72,11 +74,17 @@ expected_checksums = %w[
   ed6e3546b11e53c78933b4b2f45f99c12bde5780bf1cded682bab03132506623
 ]
 
-assert_equal [], Grat.dependencies || [], "formula must not require Go"
-assert_equal [], Grat.heads || [], "binary-only formula must not advertise a source head"
-assert_equal expected_assets.sort, Grat.urls.map { |url| File.basename(url) }.sort,
-             "formula must declare every release binary"
-assert_equal expected_checksums.sort, Grat.checksums.sort,
-             "formula checksums must match the published release assets"
+FormulaBinaryTest.assert_equal [], Grat.dependencies || [], "formula must not require Go"
+FormulaBinaryTest.assert_equal [], Grat.heads || [], "binary-only formula must not advertise a source head"
+FormulaBinaryTest.assert_equal(
+  expected_assets.sort,
+  Grat.urls.map { |url| File.basename(url) }.sort,
+  "formula must declare every release binary",
+)
+FormulaBinaryTest.assert_equal(
+  expected_checksums.sort,
+  Grat.checksums.sort,
+  "formula checksums must match the published release assets",
+)
 
 puts "formula binary declaration: PASS"

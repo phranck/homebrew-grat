@@ -47,7 +47,7 @@
       "label": "Formula",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L1",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "test_formula_binary_test_formula",
       "community": 0,
@@ -57,7 +57,7 @@
       "label": "desc()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L5",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "test_formula_binary_test_desc",
       "community": 0,
@@ -67,7 +67,7 @@
       "label": "homepage()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L8",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "test_formula_binary_test_homepage",
       "community": 0,
@@ -77,7 +77,7 @@
       "label": "license()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "test_formula_binary_test_license",
       "community": 0,
@@ -97,7 +97,7 @@
       "label": "head()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L17",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "test_formula_binary_test_head",
       "community": 0,
@@ -107,7 +107,7 @@
       "label": "test()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L21",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "test_formula_binary_test_test",
       "community": 0,
@@ -117,7 +117,7 @@
       "label": "url()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L24",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "test_formula_binary_test_url",
       "community": 0,
@@ -127,7 +127,7 @@
       "label": "sha256()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L28",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "test_formula_binary_test_sha256",
       "community": 0,
@@ -137,7 +137,7 @@
       "label": "depends_on()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L32",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "test_formula_binary_test_depends_on",
       "community": 0,
@@ -147,7 +147,7 @@
       "label": "on_macos()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L36",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "test_formula_binary_test_on_macos",
       "community": 0,
@@ -157,7 +157,7 @@
       "label": "on_linux()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L40",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "test_formula_binary_test_on_linux",
       "community": 0,
@@ -167,7 +167,7 @@
       "label": "on_arm()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L44",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "test_formula_binary_test_on_arm",
       "community": 0,
@@ -177,7 +177,7 @@
       "label": "on_intel()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L48",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "test_formula_binary_test_on_intel",
       "community": 0,
@@ -187,7 +187,7 @@
       "label": "assert_equal()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L56",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "test_formula_binary_test_assert_equal",
       "community": 0,
@@ -221,9 +221,9 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "formula_grat",
-      "target": "formula_grat_grat",
-      "confidence_score": 1.0
+      "target": "formula_grat_grat"
     },
     {
       "relation": "method",
@@ -231,9 +231,9 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "formula_grat_grat",
-      "target": "formula_grat_grat_install",
-      "confidence_score": 1.0
+      "target": "formula_grat_grat_install"
     },
     {
       "relation": "contains",
@@ -241,9 +241,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_assert_equal",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_assert_equal"
     },
     {
       "relation": "contains",
@@ -251,9 +251,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_depends_on",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_depends_on"
     },
     {
       "relation": "contains",
@@ -261,9 +261,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_desc",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_desc"
     },
     {
       "relation": "contains",
@@ -271,9 +271,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_formula",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_formula"
     },
     {
       "relation": "contains",
@@ -281,9 +281,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_head",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_head"
     },
     {
       "relation": "contains",
@@ -291,9 +291,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_homepage",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_homepage"
     },
     {
       "relation": "contains",
@@ -301,9 +301,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_license",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_license"
     },
     {
       "relation": "contains",
@@ -311,9 +311,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_arm",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_on_arm"
     },
     {
       "relation": "contains",
@@ -321,9 +321,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_intel",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_on_intel"
     },
     {
       "relation": "contains",
@@ -331,9 +331,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_linux",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_on_linux"
     },
     {
       "relation": "contains",
@@ -341,9 +341,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_macos",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_on_macos"
     },
     {
       "relation": "contains",
@@ -351,9 +351,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_sha256",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_sha256"
     },
     {
       "relation": "contains",
@@ -361,9 +361,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_test",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_test"
     },
     {
       "relation": "contains",
@@ -371,9 +371,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_url",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_url"
     },
     {
       "relation": "contains",
@@ -381,9 +381,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_version",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_version"
     },
     {
       "relation": "contains",
@@ -391,11 +391,11 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_homebrew_tap_for_grat",
-      "confidence_score": 1.0
+      "target": "readme_homebrew_tap_for_grat"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4fef1152ded38105e14d34c410f57de68b5f1304"
+  "built_at_commit": "4463fd58074734af0c61f59c9945a608f19a4ed1"
 }
