@@ -1,18 +1,24 @@
-# Phranck Grat
+# Homebrew Tap for grat
 
-## How do I install these formulae?
+[grat](https://github.com/phranck/grat) is a safe, framework-agnostic local
+service manager for macOS and Linux.
 
-`brew install phranck/grat/<formula>`
+Install the latest stable release with:
 
-Or `brew tap phranck/grat` and then `brew install <formula>`.
+```sh
+brew install phranck/grat/grat
+```
 
-Or, in a `brew bundle` `Brewfile`:
+Alternatively, add the tap first:
+
+```sh
+brew tap phranck/grat
+brew install grat
+```
+
+For a `Brewfile`, use:
 
 ```ruby
 tap "phranck/grat"
-brew "<formula>"
+brew "grat"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
