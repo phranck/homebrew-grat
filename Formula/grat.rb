@@ -1,40 +1,23 @@
 class Grat < Formula
   desc "Run approved local development tasks safely"
   homepage "https://github.com/phranck/grat"
-  version "1.1.1"
+  url "https://github.com/phranck/grat/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "6dab4b31ab3e90fd3d021e591da3372d09de3db31f0e09fccbe5bf0994bb5ece"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_darwin_arm64"
-      sha256 "73002b5faa75104cd675d8684c280668ffa7cddf1cbb7e67cb97f72fb58e70b6"
-    end
-
-    on_intel do
-      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_darwin_amd64"
-      sha256 "1d862a40869b3e7b2966954614e5b58857666dcdd9351a0bce7335ea654128a5"
-    end
+  bottle do
+    root_url "https://github.com/phranck/grat/releases/download/v1.1.2"
+    sha256 cellar:       :any_skip_relocation,
+           arm64_tahoe:  "317e8dd96748496c633f0da8e57a1f9737c9d89027e8d587ff82ea82ae4ca3d2",
+           arm64_linux:  "0fecd415cdadf04801f79c47d14d349159f20779aaa579ff6d01290586e90289",
+           tahoe:        "53539b15adb4626ffb8046a0892aaefe9f1069e1bbb6727c56755d2f7304229d",
+           x86_64_linux: "9fbb52b6b33aa6b73447619a19e8387c460a35eab1a89c783fa2cd56f288e32f"
   end
 
-  on_linux do
-    on_arm do
-      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_linux_arm64"
-      sha256 "ed6e3546b11e53c78933b4b2f45f99c12bde5780bf1cded682bab03132506623"
-    end
-
-    on_intel do
-      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_linux_amd64"
-      sha256 "c35df18e1435e810873408d03ae6858b0dcd2b1485dc462f97c419a209e50917"
-    end
-  end
+  depends_on "go" => :build
 
   def install
-    target = if OS.mac?
-      Hardware::CPU.arm? ? "darwin_arm64" : "darwin_amd64"
-    else
-      Hardware::CPU.arm? ? "linux_arm64" : "linux_amd64"
-    end
-    bin.install "grat_v#{version}_#{target}" => "grat"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X github.com/phranck/grat/internal/version.buildVersion=v#{version}"), "./cmd/grat"
   end
 
   test do
