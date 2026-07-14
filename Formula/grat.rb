@@ -1,8 +1,8 @@
 class Grat < Formula
   desc "Run approved local development tasks safely"
   homepage "https://github.com/phranck/grat"
-  url "https://github.com/phranck/grat/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0820cf8a7288a630afc948d86619eb5cf592605c831ca2b5ad1fb12972dcabe9"
+  url "https://github.com/phranck/grat/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "60e46249e57cc7ce682643dc6eb47823217e7b9c31b12c473584ff0dec62f664"
   license "MIT"
   head "https://github.com/phranck/grat.git", branch: "main"
 
