@@ -1,53 +1,7 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "homebrew_formula_delivery",
-        "label": "Homebrew Formula Delivery",
-        "nodes": [
-          "formula_grat_grat",
-          "formula_grat_bottle_declaration",
-          "workflows_tests_bottle_artifacts",
-          "workflows_publish_bottle_pull",
-          "workflows_publish_commit_push"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.95,
-        "source_file": ".github/workflows/publish.yml"
-      },
-      {
-        "id": "cross_platform_formula_validation",
-        "label": "Cross-Platform Formula Validation",
-        "nodes": [
-          "workflows_tests_macos_test_job",
-          "workflows_tests_linux_test_job",
-          "workflows_tests_formula_validation",
-          "workflows_tests_bottle_artifacts"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": ".github/workflows/tests.yml"
-      },
-      {
-        "id": "formula_installation_contract",
-        "label": "Formula Installation Contract",
-        "nodes": [
-          "formula_grat_install",
-          "formula_grat_formula_test",
-          "test_formula_binary_test_formula_contract",
-          "readme_homebrew_installation"
-        ],
-        "relation": "form",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Formula/grat.rb"
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
       "label": "grat.rb",
@@ -265,9 +219,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "test_formula_binary_test_bottle",
       "community": 0,
-      "norm_label": "bottle()"
+      "norm_label": "bottle()",
+      "id": "test_formula_binary_test_bottle"
     },
     {
       "label": "root_url()",
@@ -275,9 +229,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L53",
       "_origin": "ast",
-      "id": "test_formula_binary_test_root_url",
       "community": 0,
-      "norm_label": "root_url()"
+      "norm_label": "root_url()",
+      "id": "test_formula_binary_test_root_url"
     },
     {
       "label": "Bottle Declaration",
@@ -288,9 +242,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "formula_grat_bottle_declaration",
       "community": 1,
-      "norm_label": "bottle declaration"
+      "norm_label": "bottle declaration",
+      "id": "formula_grat_bottle_declaration"
     },
     {
       "label": "Grat.install",
@@ -301,9 +255,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "formula_grat_install",
       "community": 1,
-      "norm_label": "grat.install"
+      "norm_label": "grat.install",
+      "id": "formula_grat_install"
     },
     {
       "label": "Formula Version Test",
@@ -314,9 +268,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "formula_grat_formula_test",
       "community": 1,
-      "norm_label": "formula version test"
+      "norm_label": "formula version test",
+      "id": "formula_grat_formula_test"
     },
     {
       "label": "Formula Test Stub",
@@ -327,9 +281,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "test_formula_binary_test_formula_stub",
       "community": 1,
-      "norm_label": "formula test stub"
+      "norm_label": "formula test stub",
+      "id": "test_formula_binary_test_formula_stub"
     },
     {
       "label": "Formula Binary Contract",
@@ -340,9 +294,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "test_formula_binary_test_formula_contract",
       "community": 1,
-      "norm_label": "formula binary contract"
+      "norm_label": "formula binary contract",
+      "id": "test_formula_binary_test_formula_contract"
     },
     {
       "label": "brew pr-pull Workflow",
@@ -353,9 +307,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_publish_publish_workflow",
       "community": 4,
-      "norm_label": "brew pr-pull workflow"
+      "norm_label": "brew pr-pull workflow",
+      "id": "workflows_publish_publish_workflow"
     },
     {
       "label": "pr-pull Job",
@@ -366,9 +320,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_publish_pr_pull_job",
       "community": 4,
-      "norm_label": "pr-pull job"
+      "norm_label": "pr-pull job",
+      "id": "workflows_publish_pr_pull_job"
     },
     {
       "label": "Bottle Pull",
@@ -379,9 +333,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_publish_bottle_pull",
       "community": 4,
-      "norm_label": "bottle pull"
+      "norm_label": "bottle pull",
+      "id": "workflows_publish_bottle_pull"
     },
     {
       "label": "Commit Push",
@@ -392,9 +346,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_publish_commit_push",
       "community": 4,
-      "norm_label": "commit push"
+      "norm_label": "commit push",
+      "id": "workflows_publish_commit_push"
     },
     {
       "label": "brew test-bot Workflow",
@@ -405,9 +359,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_tests_test_workflow",
       "community": 3,
-      "norm_label": "brew test-bot workflow"
+      "norm_label": "brew test-bot workflow",
+      "id": "workflows_tests_test_workflow"
     },
     {
       "label": "macOS Test Job",
@@ -418,9 +372,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_tests_macos_test_job",
       "community": 3,
-      "norm_label": "macos test job"
+      "norm_label": "macos test job",
+      "id": "workflows_tests_macos_test_job"
     },
     {
       "label": "Linux Test Job",
@@ -431,9 +385,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_tests_linux_test_job",
       "community": 3,
-      "norm_label": "linux test job"
+      "norm_label": "linux test job",
+      "id": "workflows_tests_linux_test_job"
     },
     {
       "label": "Homebrew Formula Validation",
@@ -444,9 +398,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_tests_formula_validation",
       "community": 3,
-      "norm_label": "homebrew formula validation"
+      "norm_label": "homebrew formula validation",
+      "id": "workflows_tests_formula_validation"
     },
     {
       "label": "Bottle Artifacts",
@@ -457,9 +411,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_tests_bottle_artifacts",
       "community": 3,
-      "norm_label": "bottle artifacts"
+      "norm_label": "bottle artifacts",
+      "id": "workflows_tests_bottle_artifacts"
     },
     {
       "label": "grat",
@@ -470,9 +424,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_grat",
       "community": 2,
-      "norm_label": "grat"
+      "norm_label": "grat",
+      "id": "readme_grat"
     },
     {
       "label": "Homebrew Installation",
@@ -483,9 +437,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_homebrew_installation",
       "community": 2,
-      "norm_label": "homebrew installation"
+      "norm_label": "homebrew installation",
+      "id": "readme_homebrew_installation"
     },
     {
       "label": "Brewfile Installation",
@@ -496,9 +450,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_brewfile_installation",
       "community": 2,
-      "norm_label": "brewfile installation"
+      "norm_label": "brewfile installation",
+      "id": "readme_brewfile_installation"
     }
   ],
   "links": [
@@ -618,9 +572,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_bottle",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_bottle"
     },
     {
       "relation": "contains",
@@ -738,9 +692,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_root_url",
-      "confidence_score": 1.0
+      "target": "test_formula_binary_test_root_url"
     },
     {
       "relation": "contains",
@@ -953,50 +907,6 @@
       "target": "workflows_tests_formula_validation"
     }
   ],
-  "hyperedges": [
-    {
-      "id": "homebrew_formula_delivery",
-      "label": "Homebrew Formula Delivery",
-      "nodes": [
-        "formula_grat_grat",
-        "formula_grat_bottle_declaration",
-        "workflows_tests_bottle_artifacts",
-        "workflows_publish_bottle_pull",
-        "workflows_publish_commit_push"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": ".github/workflows/publish.yml"
-    },
-    {
-      "id": "cross_platform_formula_validation",
-      "label": "Cross-Platform Formula Validation",
-      "nodes": [
-        "workflows_tests_macos_test_job",
-        "workflows_tests_linux_test_job",
-        "workflows_tests_formula_validation",
-        "workflows_tests_bottle_artifacts"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml"
-    },
-    {
-      "id": "formula_installation_contract",
-      "label": "Formula Installation Contract",
-      "nodes": [
-        "formula_grat_install",
-        "formula_grat_formula_test",
-        "test_formula_binary_test_formula_contract",
-        "readme_homebrew_installation"
-      ],
-      "relation": "form",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Formula/grat.rb"
-    }
-  ],
-  "built_at_commit": "08e2b63b61cac79d20ff8d3602cb67569feefe06"
+  "hyperedges": [],
+  "built_at_commit": "07629ca8b37fd42c18b5af4b5d9ebfc659fe5951"
 }

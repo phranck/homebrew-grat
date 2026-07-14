@@ -265,7 +265,7 @@ LEGEND.forEach(c => {
 </script>
 <script>
 // Render hyperedges as shaded regions
-const hyperedges = [{"id": "homebrew_formula_delivery", "label": "Homebrew Formula Delivery", "nodes": ["formula_grat_grat", "formula_grat_bottle_declaration", "workflows_tests_bottle_artifacts", "workflows_publish_bottle_pull", "workflows_publish_commit_push"], "relation": "participate_in", "confidence": "INFERRED", "confidence_score": 0.95, "source_file": ".github/workflows/publish.yml"}, {"id": "cross_platform_formula_validation", "label": "Cross-Platform Formula Validation", "nodes": ["workflows_tests_macos_test_job", "workflows_tests_linux_test_job", "workflows_tests_formula_validation", "workflows_tests_bottle_artifacts"], "relation": "implement", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": ".github/workflows/tests.yml"}, {"id": "formula_installation_contract", "label": "Formula Installation Contract", "nodes": ["formula_grat_install", "formula_grat_formula_test", "test_formula_binary_test_formula_contract", "readme_homebrew_installation"], "relation": "form", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "Formula/grat.rb"}];
+const hyperedges = [];
 // afterDrawing passes ctx already transformed to network coordinate space.
 // Draw node positions raw — no manual pan/zoom/DPR math needed.
 network.on('afterDrawing', function(ctx) {

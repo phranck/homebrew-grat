@@ -1,7 +1,7 @@
 # Graph Report - .  (2026-07-14)
 
 ## Corpus Check
-- 5 files · ~726 words
+- 1 files · ~734 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -42,11 +42,6 @@
 
 ## Import Cycles
 - None detected.
-
-## Hyperedges (group relationships)
-- **Homebrew Formula Delivery** — formula_grat_grat, formula_grat_bottle_declaration, workflows_tests_bottle_artifacts, workflows_publish_bottle_pull, workflows_publish_commit_push [INFERRED 0.95]
-- **Cross-Platform Formula Validation** — workflows_tests_macos_test_job, workflows_tests_linux_test_job, workflows_tests_formula_validation, workflows_tests_bottle_artifacts [EXTRACTED 1.00]
-- **Formula Installation Contract** — formula_grat_install, formula_grat_formula_test, test_formula_binary_test_formula_contract, readme_homebrew_installation [INFERRED 0.85]
 
 ## Communities (5 total, 1 thin omitted)
 

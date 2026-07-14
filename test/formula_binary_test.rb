@@ -84,7 +84,7 @@ end
 
 load File.expand_path("../Formula/grat.rb", __dir__)
 
-expected_bottle_tags = %i[arm64_tahoe arm64_linux tahoe x86_64_linux]
+expected_bottle_tags = [:arm64_tahoe, :arm64_linux, :tahoe, :x86_64_linux]
 expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.1.2.tar.gz"
 expected_source_checksum = "6dab4b31ab3e90fd3d021e591da3372d09de3db31f0e09fccbe5bf0994bb5ece"
 expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.1.2"
@@ -96,25 +96,28 @@ expected_bottle_checksums = {
 }.freeze
 
 Formula::BinaryTest.assert_equal [{ "go" => :build }], Grat.dependencies,
-                                  "formula must declare Go only for source fallback builds"
+                                 "formula must declare Go only for source fallback builds"
 Formula::BinaryTest.assert_equal [], Grat.heads || [], "formula must not advertise a source head"
 Formula::BinaryTest.assert_equal [expected_source_url], Grat.urls,
-                                  "formula must use the matching source archive"
+                                 "formula must use the matching source archive"
 Formula::BinaryTest.assert_equal [expected_source_checksum], Grat.checksums,
-                                  "formula source checksum must match the published tag"
+                                 "formula source checksum must match the published tag"
 Formula::BinaryTest.assert_equal expected_bottle_root, Grat.bottle_root_url,
-                                  "bottles must come from the matching grat release"
+                                 "bottles must come from the matching grat release"
 
 bottle_checksums = Grat.bottle_checksums || []
 Formula::BinaryTest.assert_equal 1, bottle_checksums.length,
-                                  "formula must declare one portable bottle set"
+                                 "formula must declare one portable bottle set"
 bottle = bottle_checksums.first || {}
 Formula::BinaryTest.assert_equal :any_skip_relocation, bottle[:cellar],
-                                  "bottles must be relocatable"
+                                 "bottles must be relocatable"
 Formula::BinaryTest.assert_equal expected_bottle_tags.sort, (bottle.keys - [:cellar]).sort,
-                                  "formula must provide every supported bottle"
+                                 "formula must provide every supported bottle"
+bottle_checksums_without_cellar = bottle.each_with_object({}) do |(key, value), checksums|
+  checksums[key] = value if key != :cellar
+end
 Formula::BinaryTest.assert_equal expected_bottle_checksums,
-                                  bottle.reject { |key, _| key == :cellar },
-                                  "formula checksums must match the published bottle archives"
+                                 bottle_checksums_without_cellar,
+                                 "formula checksums must match the published bottle archives"
 
 puts "formula bottle declaration: PASS"
