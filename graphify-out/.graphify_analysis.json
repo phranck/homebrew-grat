@@ -1,73 +1,71 @@
 {
   "communities": {
-    "0": [
-      "test_formula_binary_test",
-      "test_formula_binary_test_assert_equal",
-      "test_formula_binary_test_bottle",
-      "test_formula_binary_test_depends_on",
-      "test_formula_binary_test_desc",
-      "test_formula_binary_test_formula",
-      "test_formula_binary_test_head",
-      "test_formula_binary_test_homepage",
-      "test_formula_binary_test_license",
-      "test_formula_binary_test_on_arm",
-      "test_formula_binary_test_on_intel",
-      "test_formula_binary_test_on_linux",
-      "test_formula_binary_test_on_macos",
-      "test_formula_binary_test_root_url",
-      "test_formula_binary_test_sha256",
-      "test_formula_binary_test_test",
-      "test_formula_binary_test_url",
-      "test_formula_binary_test_version"
-    ],
     "1": [
       "formula_grat",
-      "formula_grat_bottle_declaration",
-      "formula_grat_formula_test",
       "formula_grat_grat",
       "formula_grat_grat_install",
+      "formula_grat_bottle_declaration",
       "formula_grat_install",
+      "formula_grat_formula_test",
+      "test_formula_binary_test_formula_stub",
       "test_formula_binary_test_formula_contract",
-      "test_formula_binary_test_formula_stub"
-    ],
-    "2": [
-      "readme",
-      "readme_brewfile_installation",
-      "readme_grat",
       "readme_homebrew_installation",
-      "readme_homebrew_tap_for_grat"
+      "readme_brewfile_installation"
     ],
-    "3": [
-      "workflows_tests_bottle_artifacts",
-      "workflows_tests_formula_validation",
-      "workflows_tests_linux_test_job",
-      "workflows_tests_macos_test_job",
-      "workflows_tests_test_workflow"
+    "0": [
+      "test_formula_binary_test",
+      "test_formula_binary_test_formula",
+      "test_formula_binary_test_desc",
+      "test_formula_binary_test_homepage",
+      "test_formula_binary_test_license",
+      "test_formula_binary_test_version",
+      "test_formula_binary_test_head",
+      "test_formula_binary_test_test",
+      "test_formula_binary_test_url",
+      "test_formula_binary_test_sha256",
+      "test_formula_binary_test_depends_on",
+      "test_formula_binary_test_bottle",
+      "test_formula_binary_test_root_url",
+      "test_formula_binary_test_on_macos",
+      "test_formula_binary_test_on_linux",
+      "test_formula_binary_test_on_arm",
+      "test_formula_binary_test_on_intel",
+      "test_formula_binary_test_assert_equal"
+    ],
+    "5": [
+      "users_phranck_developer_tools_cli_homebrew_grat_readme_md",
+      "homebrew_grat_readme_homebrew_tap_for_grat"
     ],
     "4": [
-      "workflows_publish_bottle_pull",
-      "workflows_publish_commit_push",
+      "workflows_publish_publish_workflow",
       "workflows_publish_pr_pull_job",
-      "workflows_publish_publish_workflow"
+      "workflows_publish_bottle_pull",
+      "workflows_publish_commit_push"
+    ],
+    "3": [
+      "workflows_tests_test_workflow",
+      "workflows_tests_macos_test_job",
+      "workflows_tests_linux_test_job",
+      "workflows_tests_formula_validation",
+      "workflows_tests_bottle_artifacts"
+    ],
+    "2": [
+      "readme_grat"
     ]
   },
   "cohesion": {
+    "1": 0.2222222222222222,
     "0": 0.1111111111111111,
-    "1": 0.2857142857142857,
-    "2": 0.4,
+    "5": 1.0,
+    "4": 0.6666666666666666,
     "3": 0.6,
-    "4": 0.6666666666666666
+    "2": 1.0
   },
   "gods": [
     {
       "id": "formula_grat_grat",
       "label": "Grat",
       "degree": 10
-    },
-    {
-      "id": "readme_homebrew_tap_for_grat",
-      "label": "Homebrew Tap for grat",
-      "degree": 4
     },
     {
       "id": "workflows_tests_bottle_artifacts",
@@ -108,59 +106,64 @@
       "id": "workflows_tests_formula_validation",
       "label": "Homebrew Formula Validation",
       "degree": 3
+    },
+    {
+      "id": "workflows_publish_commit_push",
+      "label": "Commit Push",
+      "degree": 2
     }
   ],
   "surprises": [
     {
-      "source": "Brewfile Installation",
-      "target": "Grat",
+      "source": "Grat",
+      "target": "Brewfile Installation",
       "source_files": [
-        "README.md",
-        "Formula/grat.rb"
+        "Formula/grat.rb",
+        "README.md"
       ],
       "confidence": "INFERRED",
       "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; peripheral node `Brewfile Installation` unexpectedly reaches hub `Grat`"
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Brewfile Installation` unexpectedly reaches hub `Grat`"
     },
     {
-      "source": "Homebrew Installation",
-      "target": "Grat",
+      "source": "Grat",
+      "target": "Homebrew Installation",
       "source_files": [
-        "README.md",
-        "Formula/grat.rb"
+        "Formula/grat.rb",
+        "README.md"
       ],
       "confidence": "INFERRED",
       "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities; peripheral node `Homebrew Installation` unexpectedly reaches hub `Grat`"
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Homebrew Installation` unexpectedly reaches hub `Grat`"
     },
     {
-      "source": "Homebrew Formula Validation",
-      "target": "Grat",
+      "source": "Grat",
+      "target": "Homebrew Formula Validation",
       "source_files": [
-        ".github/workflows/tests.yml",
-        "Formula/grat.rb"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "Bottle Artifacts",
-      "target": "Bottle Declaration",
-      "source_files": [
-        ".github/workflows/tests.yml",
-        "Formula/grat.rb"
+        "Formula/grat.rb",
+        ".github/workflows/tests.yml"
       ],
       "confidence": "INFERRED",
       "relation": "conceptually_related_to",
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
     },
     {
-      "source": "Formula Test Stub",
-      "target": "Grat",
+      "source": "Bottle Declaration",
+      "target": "Bottle Artifacts",
       "source_files": [
-        "test/formula_binary_test.rb",
-        "Formula/grat.rb"
+        "Formula/grat.rb",
+        ".github/workflows/tests.yml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Grat",
+      "target": "Formula Test Stub",
+      "source_files": [
+        "Formula/grat.rb",
+        "test/formula_binary_test.rb"
       ],
       "confidence": "EXTRACTED",
       "relation": "references",
@@ -171,17 +174,17 @@
     {
       "type": "bridge_node",
       "question": "Why does `Formula Binary Contract` connect `Grat Formula Packaging` to `Formula Contract Tests`?",
-      "why": "High betweenness centrality (0.510) - this node is a cross-community bridge."
+      "why": "High betweenness centrality (0.437) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `Grat` connect `Grat Formula Packaging` to `Tap Installation Guide`, `Test-Bot Validation`?",
-      "why": "High betweenness centrality (0.505) - this node is a cross-community bridge."
+      "question": "Why does `Grat` connect `Grat Formula Packaging` to `Test-Bot Validation`?",
+      "why": "High betweenness centrality (0.368) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
       "question": "Why does `Bottle Declaration` connect `Grat Formula Packaging` to `Test-Bot Validation`?",
-      "why": "High betweenness centrality (0.241) - this node is a cross-community bridge."
+      "why": "High betweenness centrality (0.221) - this node is a cross-community bridge."
     },
     {
       "type": "verify_inferred",
@@ -190,13 +193,13 @@
     },
     {
       "type": "verify_inferred",
-      "question": "Are the 2 inferred relationships involving `Bottle Artifacts` (e.g. with `Bottle Pull` and `Bottle Declaration`) actually correct?",
+      "question": "Are the 2 inferred relationships involving `Bottle Artifacts` (e.g. with `Bottle Declaration` and `Bottle Pull`) actually correct?",
       "why": "`Bottle Artifacts` has 2 INFERRED edges - model-reasoned connections that need verification."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Formula`, `Grat.install`, `Formula Version Test` to the rest of the system?",
-      "why": "6 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `Formula`, `Homebrew Tap for grat`, `Grat.install` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",

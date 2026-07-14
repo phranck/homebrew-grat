@@ -9,9 +9,9 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "formula_grat",
       "community": 1,
-      "norm_label": "grat.rb",
-      "id": "formula_grat"
+      "norm_label": "grat.rb"
     },
     {
       "label": "Grat",
@@ -19,19 +19,19 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "formula_grat_grat",
       "community": 1,
-      "norm_label": "grat",
-      "id": "formula_grat_grat"
+      "norm_label": "grat"
     },
     {
       "label": ".install()",
       "file_type": "code",
       "source_file": "Formula/grat.rb",
-      "source_location": "L31",
+      "source_location": "L19",
       "_origin": "ast",
+      "id": "formula_grat_grat_install",
       "community": 1,
-      "norm_label": ".install()",
-      "id": "formula_grat_grat_install"
+      "norm_label": ".install()"
     },
     {
       "label": "formula_binary_test.rb",
@@ -39,9 +39,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "test_formula_binary_test",
       "community": 0,
-      "norm_label": "formula_binary_test.rb",
-      "id": "test_formula_binary_test"
+      "norm_label": "formula_binary_test.rb"
     },
     {
       "label": "Formula",
@@ -49,169 +49,99 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L4",
       "_origin": "ast",
+      "id": "test_formula_binary_test_formula",
       "community": 0,
-      "norm_label": "formula",
-      "id": "test_formula_binary_test_formula"
+      "norm_label": "formula"
     },
     {
       "label": "desc()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
+      "id": "test_formula_binary_test_desc",
       "community": 0,
-      "norm_label": "desc()",
-      "id": "test_formula_binary_test_desc"
+      "norm_label": "desc()"
     },
     {
       "label": "homepage()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L10",
+      "source_location": "L13",
       "_origin": "ast",
+      "id": "test_formula_binary_test_homepage",
       "community": 0,
-      "norm_label": "homepage()",
-      "id": "test_formula_binary_test_homepage"
+      "norm_label": "homepage()"
     },
     {
       "label": "license()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L12",
+      "source_location": "L17",
       "_origin": "ast",
+      "id": "test_formula_binary_test_license",
       "community": 0,
-      "norm_label": "license()",
-      "id": "test_formula_binary_test_license"
+      "norm_label": "license()"
     },
     {
       "label": "version()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L14",
+      "source_location": "L21",
       "_origin": "ast",
+      "id": "test_formula_binary_test_version",
       "community": 0,
-      "norm_label": "version()",
-      "id": "test_formula_binary_test_version"
+      "norm_label": "version()"
     },
     {
       "label": "head()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L16",
+      "source_location": "L25",
       "_origin": "ast",
+      "id": "test_formula_binary_test_head",
       "community": 0,
-      "norm_label": "head()",
-      "id": "test_formula_binary_test_head"
+      "norm_label": "head()"
     },
     {
       "label": "test()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L20",
+      "source_location": "L29",
       "_origin": "ast",
+      "id": "test_formula_binary_test_test",
       "community": 0,
-      "norm_label": "test()",
-      "id": "test_formula_binary_test_test"
+      "norm_label": "test()"
     },
     {
       "label": "url()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L22",
+      "source_location": "L33",
       "_origin": "ast",
+      "id": "test_formula_binary_test_url",
       "community": 0,
-      "norm_label": "url()",
-      "id": "test_formula_binary_test_url"
+      "norm_label": "url()"
     },
     {
       "label": "sha256()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L26",
+      "source_location": "L37",
       "_origin": "ast",
+      "id": "test_formula_binary_test_sha256",
       "community": 0,
-      "norm_label": "sha256()",
-      "id": "test_formula_binary_test_sha256"
+      "norm_label": "sha256()"
     },
     {
       "label": "depends_on()",
       "file_type": "code",
       "source_file": "test/formula_binary_test.rb",
-      "source_location": "L30",
+      "source_location": "L45",
       "_origin": "ast",
+      "id": "test_formula_binary_test_depends_on",
       "community": 0,
-      "norm_label": "depends_on()",
-      "id": "test_formula_binary_test_depends_on"
-    },
-    {
-      "label": "on_macos()",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "on_macos()",
-      "id": "test_formula_binary_test_on_macos"
-    },
-    {
-      "label": "on_linux()",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "on_linux()",
-      "id": "test_formula_binary_test_on_linux"
-    },
-    {
-      "label": "on_arm()",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "on_arm()",
-      "id": "test_formula_binary_test_on_arm"
-    },
-    {
-      "label": "on_intel()",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "on_intel()",
-      "id": "test_formula_binary_test_on_intel"
-    },
-    {
-      "label": "assert_equal()",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": "L54",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "assert_equal()",
-      "id": "test_formula_binary_test_assert_equal"
-    },
-    {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "readme.md",
-      "id": "readme"
-    },
-    {
-      "label": "Homebrew Tap for grat",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "homebrew tap for grat",
-      "id": "readme_homebrew_tap_for_grat"
+      "norm_label": "depends_on()"
     },
     {
       "label": "bottle()",
@@ -219,9 +149,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L49",
       "_origin": "ast",
+      "id": "test_formula_binary_test_bottle",
       "community": 0,
-      "norm_label": "bottle()",
-      "id": "test_formula_binary_test_bottle"
+      "norm_label": "bottle()"
     },
     {
       "label": "root_url()",
@@ -229,9 +159,79 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L53",
       "_origin": "ast",
+      "id": "test_formula_binary_test_root_url",
       "community": 0,
-      "norm_label": "root_url()",
-      "id": "test_formula_binary_test_root_url"
+      "norm_label": "root_url()"
+    },
+    {
+      "label": "on_macos()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_macos",
+      "community": 0,
+      "norm_label": "on_macos()"
+    },
+    {
+      "label": "on_linux()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_linux",
+      "community": 0,
+      "norm_label": "on_linux()"
+    },
+    {
+      "label": "on_arm()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_arm",
+      "community": 0,
+      "norm_label": "on_arm()"
+    },
+    {
+      "label": "on_intel()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_intel",
+      "community": 0,
+      "norm_label": "on_intel()"
+    },
+    {
+      "label": "assert_equal()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_assert_equal",
+      "community": 0,
+      "norm_label": "assert_equal()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "users_phranck_developer_tools_cli_homebrew_grat_readme_md",
+      "community": 5,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Homebrew Tap for grat",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "homebrew_grat_readme_homebrew_tap_for_grat",
+      "community": 5,
+      "norm_label": "homebrew tap for grat"
     },
     {
       "label": "Bottle Declaration",
@@ -437,7 +437,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "homebrew installation",
       "id": "readme_homebrew_installation"
     },
@@ -450,7 +450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "brewfile installation",
       "id": "readme_brewfile_installation"
     }
@@ -742,39 +742,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "readme_homebrew_tap_for_grat"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_homebrew_tap_for_grat",
-      "target": "readme_brewfile_installation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_homebrew_tap_for_grat",
-      "target": "readme_grat"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_homebrew_tap_for_grat",
-      "target": "readme_homebrew_installation"
+      "source": "users_phranck_developer_tools_cli_homebrew_grat_readme_md",
+      "target": "homebrew_grat_readme_homebrew_tap_for_grat",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -908,5 +878,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a6d789f908b4e6ba8e2d5044fcaf16931856f1ba"
+  "built_at_commit": "0c76849f8e6c4ed673c664c046ff752a6c89feb7"
 }

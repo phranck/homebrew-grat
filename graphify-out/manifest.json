@@ -1,26 +1,26 @@
 {
   "Formula/grat.rb": {
-    "mtime": 1784037607.0843675,
-    "ast_hash": "8daf82c8b66dc293162c5e8d27300dfe",
+    "mtime": 1784059987.02072,
+    "ast_hash": "95ab14159f10c760385dd1458d2dc667",
     "semantic_hash": ""
   },
   "test/formula_binary_test.rb": {
-    "mtime": 1784038049.7781165,
-    "ast_hash": "ed5a7bf0eefdbef9a40d3c26c780fd4b",
+    "mtime": 1784059967.0654597,
+    "ast_hash": "2e36ef772c3c9a68b1a951965a85984b",
     "semantic_hash": ""
   },
   ".github/workflows/publish.yml": {
-    "mtime": 1784033259.715093,
+    "mtime": 1784059232.9822557,
     "ast_hash": "5558f39547b4e3f9da46c9659cf8308c",
     "semantic_hash": ""
   },
   ".github/workflows/tests.yml": {
-    "mtime": 1784033259.7152028,
+    "mtime": 1784059232.9823284,
     "ast_hash": "59a4cc4dee44ddce0314e5254a9a10e6",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784033259.7154374,
+    "mtime": 1784059232.9824882,
     "ast_hash": "9b1199259b130fc392f70a2e3d3ebd7d",
     "semantic_hash": ""
   },
