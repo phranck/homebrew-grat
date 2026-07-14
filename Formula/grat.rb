@@ -1,16 +1,40 @@
 class Grat < Formula
   desc "Run approved local development tasks safely"
   homepage "https://github.com/phranck/grat"
-  url "https://github.com/phranck/grat/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "60e46249e57cc7ce682643dc6eb47823217e7b9c31b12c473584ff0dec62f664"
+  version "1.1.1"
   license "MIT"
-  head "https://github.com/phranck/grat.git", branch: "main"
 
-  depends_on "go" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_darwin_arm64"
+      sha256 "73002b5faa75104cd675d8684c280668ffa7cddf1cbb7e67cb97f72fb58e70b6"
+    end
+
+    on_intel do
+      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_darwin_amd64"
+      sha256 "1d862a40869b3e7b2966954614e5b58857666dcdd9351a0bce7335ea654128a5"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_linux_arm64"
+      sha256 "ed6e3546b11e53c78933b4b2f45f99c12bde5780bf1cded682bab03132506623"
+    end
+
+    on_intel do
+      url "https://github.com/phranck/grat/releases/download/v1.1.1/grat_v1.1.1_linux_amd64"
+      sha256 "c35df18e1435e810873408d03ae6858b0dcd2b1485dc462f97c419a209e50917"
+    end
+  end
 
   def install
-    ldflags = "-s -w -X github.com/phranck/grat/internal/version.buildVersion=v#{version}"
-    system "go", "build", *std_go_args(ldflags:), "./cmd/grat"
+    target = if OS.mac?
+      Hardware::CPU.arm? ? "darwin_arm64" : "darwin_amd64"
+    else
+      Hardware::CPU.arm? ? "linux_arm64" : "linux_amd64"
+    end
+    bin.install "grat_v#{version}_#{target}" => "grat"
   end
 
   test do

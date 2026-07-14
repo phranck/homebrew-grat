@@ -1,0 +1,401 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "grat.rb",
+      "file_type": "code",
+      "source_file": "Formula/grat.rb",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "formula_grat",
+      "community": 1,
+      "norm_label": "grat.rb"
+    },
+    {
+      "label": "Grat",
+      "file_type": "code",
+      "source_file": "Formula/grat.rb",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "formula_grat_grat",
+      "community": 1,
+      "norm_label": "grat"
+    },
+    {
+      "label": ".install()",
+      "file_type": "code",
+      "source_file": "Formula/grat.rb",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "formula_grat_grat_install",
+      "community": 1,
+      "norm_label": ".install()"
+    },
+    {
+      "label": "formula_binary_test.rb",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "test_formula_binary_test",
+      "community": 0,
+      "norm_label": "formula_binary_test.rb"
+    },
+    {
+      "label": "Formula",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_formula",
+      "community": 0,
+      "norm_label": "formula"
+    },
+    {
+      "label": "desc()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_desc",
+      "community": 0,
+      "norm_label": "desc()"
+    },
+    {
+      "label": "homepage()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_homepage",
+      "community": 0,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "license()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_license",
+      "community": 0,
+      "norm_label": "license()"
+    },
+    {
+      "label": "version()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_version",
+      "community": 0,
+      "norm_label": "version()"
+    },
+    {
+      "label": "head()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_head",
+      "community": 0,
+      "norm_label": "head()"
+    },
+    {
+      "label": "test()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_test",
+      "community": 0,
+      "norm_label": "test()"
+    },
+    {
+      "label": "url()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_url",
+      "community": 0,
+      "norm_label": "url()"
+    },
+    {
+      "label": "sha256()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_sha256",
+      "community": 0,
+      "norm_label": "sha256()"
+    },
+    {
+      "label": "depends_on()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_depends_on",
+      "community": 0,
+      "norm_label": "depends_on()"
+    },
+    {
+      "label": "on_macos()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_macos",
+      "community": 0,
+      "norm_label": "on_macos()"
+    },
+    {
+      "label": "on_linux()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_linux",
+      "community": 0,
+      "norm_label": "on_linux()"
+    },
+    {
+      "label": "on_arm()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_arm",
+      "community": 0,
+      "norm_label": "on_arm()"
+    },
+    {
+      "label": "on_intel()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_on_intel",
+      "community": 0,
+      "norm_label": "on_intel()"
+    },
+    {
+      "label": "assert_equal()",
+      "file_type": "code",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "test_formula_binary_test_assert_equal",
+      "community": 0,
+      "norm_label": "assert_equal()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 2,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Homebrew Tap for grat",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_homebrew_tap_for_grat",
+      "community": 2,
+      "norm_label": "homebrew tap for grat"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Formula/grat.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "formula_grat",
+      "target": "formula_grat_grat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Formula/grat.rb",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "formula_grat_grat",
+      "target": "formula_grat_grat_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_assert_equal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_depends_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_desc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_formula",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_head",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_on_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_on_intel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_on_linux",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_on_macos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/formula_binary_test.rb",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "test_formula_binary_test",
+      "target": "test_formula_binary_test_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_homebrew_tap_for_grat",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4fef1152ded38105e14d34c410f57de68b5f1304"
+}
