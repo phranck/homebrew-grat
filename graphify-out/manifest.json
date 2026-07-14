@@ -25,14 +25,14 @@
     "semantic_hash": ""
   },
   "/Users/phranck/Developer/tools/cli/homebrew-grat/Formula/grat.rb": {
-    "mtime": 1784042146.0267916,
-    "ast_hash": "fdc3428025fee9c725dcda590619ea91",
-    "semantic_hash": "fdc3428025fee9c725dcda590619ea91"
+    "mtime": 1784044018.2819788,
+    "ast_hash": "9b5f943cc9f6e180091f81cd642a54c6",
+    "semantic_hash": "9b5f943cc9f6e180091f81cd642a54c6"
   },
   "/Users/phranck/Developer/tools/cli/homebrew-grat/test/formula_binary_test.rb": {
-    "mtime": 1784042579.5810318,
-    "ast_hash": "3b46f7bd1364b772529d709176bb7c83",
-    "semantic_hash": "3b46f7bd1364b772529d709176bb7c83"
+    "mtime": 1784044000.2928195,
+    "ast_hash": "cd50bf7fef242a48f0422e71f49c8f83",
+    "semantic_hash": "cd50bf7fef242a48f0422e71f49c8f83"
   },
   "/Users/phranck/Developer/tools/cli/homebrew-grat/.github/workflows/publish.yml": {
     "mtime": 1784033259.715093,
