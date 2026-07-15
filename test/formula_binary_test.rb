@@ -85,14 +85,14 @@ end
 load File.expand_path("../Formula/grat.rb", __dir__)
 
 expected_bottle_tags = [:arm64_tahoe, :arm64_linux, :tahoe, :x86_64_linux]
-expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.1.4.tar.gz"
-expected_source_checksum = "c3b32408b69743a906d506f6e4cb49fc2ad86d2e6618601a2abdfd77a5df8412"
-expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.1.4"
+expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.1.5.tar.gz"
+expected_source_checksum = "7c6cc8cda0687a8b73fb114ba75cb1896370a5f8ce5bfaf5eabe9c4fa960c92e"
+expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.1.5"
 expected_bottle_checksums = {
-  arm64_tahoe:  "7a0c2d87fc86ae3def14126748e84aa7ddb64ed20d539269ceac707224a97998",
-  arm64_linux:  "71fa1d580ad212d87dc197cf1ce45d81efa259050e56851586f6d0b16db9fb17",
-  tahoe:        "3c5a25da52a28e9b600e491079a730348570acf91854fc99a0abb112b05f58e6",
-  x86_64_linux: "98e78d81222892ca7be38ef91c268dc977fc7d8e50372ca68c71eadcbdd725d7",
+  arm64_tahoe:  "981aed5c174231b77edcd08784facc1ffa606a5ddc1cf886c9b0e527eecb999d",
+  arm64_linux:  "5db5c761df6a814461418a68e2407a914ce7fe3ed4c7cbbc652de25e991b5c7f",
+  tahoe:        "23093d74233f25b011645de4d9256d4385aa14bbdc4fbffcd61abe6137f702e7",
+  x86_64_linux: "3dba03caf505bd88b60fc014e4fb6590140f25695f66967c1a9ecdf6c3d6902c",
 }.freeze
 
 Formula::BinaryTest.assert_equal [{ "go" => :build }], Grat.dependencies,
