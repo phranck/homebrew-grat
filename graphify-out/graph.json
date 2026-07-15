@@ -219,8 +219,8 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "users_phranck_developer_tools_cli_homebrew_grat_readme_md",
-      "community": 5,
+      "id": "readme",
+      "community": 2,
       "norm_label": "readme.md"
     },
     {
@@ -229,230 +229,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "homebrew_grat_readme_homebrew_tap_for_grat",
-      "community": 5,
-      "norm_label": "homebrew tap for grat"
-    },
-    {
-      "label": "Bottle Declaration",
-      "file_type": "code",
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "bottle declaration",
-      "id": "formula_grat_bottle_declaration"
-    },
-    {
-      "label": "Grat.install",
-      "file_type": "code",
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "grat.install",
-      "id": "formula_grat_install"
-    },
-    {
-      "label": "Formula Version Test",
-      "file_type": "code",
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "formula version test",
-      "id": "formula_grat_formula_test"
-    },
-    {
-      "label": "Formula Test Stub",
-      "file_type": "code",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "formula test stub",
-      "id": "test_formula_binary_test_formula_stub"
-    },
-    {
-      "label": "Formula Binary Contract",
-      "file_type": "concept",
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "formula binary contract",
-      "id": "test_formula_binary_test_formula_contract"
-    },
-    {
-      "label": "brew pr-pull Workflow",
-      "file_type": "code",
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "brew pr-pull workflow",
-      "id": "workflows_publish_publish_workflow"
-    },
-    {
-      "label": "pr-pull Job",
-      "file_type": "code",
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "pr-pull job",
-      "id": "workflows_publish_pr_pull_job"
-    },
-    {
-      "label": "Bottle Pull",
-      "file_type": "code",
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "bottle pull",
-      "id": "workflows_publish_bottle_pull"
-    },
-    {
-      "label": "Commit Push",
-      "file_type": "code",
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "commit push",
-      "id": "workflows_publish_commit_push"
-    },
-    {
-      "label": "brew test-bot Workflow",
-      "file_type": "code",
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "brew test-bot workflow",
-      "id": "workflows_tests_test_workflow"
-    },
-    {
-      "label": "macOS Test Job",
-      "file_type": "code",
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "macos test job",
-      "id": "workflows_tests_macos_test_job"
-    },
-    {
-      "label": "Linux Test Job",
-      "file_type": "code",
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "linux test job",
-      "id": "workflows_tests_linux_test_job"
-    },
-    {
-      "label": "Homebrew Formula Validation",
-      "file_type": "concept",
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "homebrew formula validation",
-      "id": "workflows_tests_formula_validation"
-    },
-    {
-      "label": "Bottle Artifacts",
-      "file_type": "concept",
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "bottle artifacts",
-      "id": "workflows_tests_bottle_artifacts"
-    },
-    {
-      "label": "grat",
-      "file_type": "concept",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "id": "readme_homebrew_tap_for_grat",
       "community": 2,
-      "norm_label": "grat",
-      "id": "readme_grat"
-    },
-    {
-      "label": "Homebrew Installation",
-      "file_type": "concept",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "homebrew installation",
-      "id": "readme_homebrew_installation"
-    },
-    {
-      "label": "Brewfile Installation",
-      "file_type": "concept",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "brewfile installation",
-      "id": "readme_brewfile_installation"
+      "norm_label": "homebrew tap for grat"
     }
   ],
   "links": [
@@ -462,29 +241,9 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "formula_grat",
-      "target": "formula_grat_grat"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "formula_grat_grat",
-      "target": "formula_grat_bottle_declaration"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "formula_grat_grat",
-      "target": "formula_grat_formula_test"
+      "target": "formula_grat_grat",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -492,69 +251,9 @@
       "source_file": "Formula/grat.rb",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "formula_grat_grat",
-      "target": "formula_grat_grat_install"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Formula/grat.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "formula_grat_grat",
-      "target": "formula_grat_install"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_brewfile_installation",
-      "target": "formula_grat_grat"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_homebrew_installation",
-      "target": "formula_grat_grat"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_formula_binary_test_formula_contract",
-      "target": "formula_grat_grat"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_formula_binary_test_formula_stub",
-      "target": "formula_grat_grat"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_formula_validation",
-      "target": "formula_grat_grat"
+      "target": "formula_grat_grat_install",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -562,9 +261,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L77",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_assert_equal"
+      "target": "test_formula_binary_test_assert_equal",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -572,9 +271,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L49",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_bottle"
+      "target": "test_formula_binary_test_bottle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -582,9 +281,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_depends_on"
+      "target": "test_formula_binary_test_depends_on",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -592,9 +291,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_desc"
+      "target": "test_formula_binary_test_desc",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -602,19 +301,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_formula"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_formula_contract"
+      "target": "test_formula_binary_test_formula",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -622,9 +311,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_head"
+      "target": "test_formula_binary_test_head",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -632,9 +321,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_homepage"
+      "target": "test_formula_binary_test_homepage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -642,9 +331,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_license"
+      "target": "test_formula_binary_test_license",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -652,9 +341,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_arm"
+      "target": "test_formula_binary_test_on_arm",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -662,9 +351,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L69",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_intel"
+      "target": "test_formula_binary_test_on_intel",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -672,9 +361,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L61",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_linux"
+      "target": "test_formula_binary_test_on_linux",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -682,9 +371,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L57",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_on_macos"
+      "target": "test_formula_binary_test_on_macos",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -692,9 +381,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L53",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_root_url"
+      "target": "test_formula_binary_test_root_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -702,9 +391,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L37",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_sha256"
+      "target": "test_formula_binary_test_sha256",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -712,9 +401,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_test"
+      "target": "test_formula_binary_test_test",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -722,9 +411,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_url"
+      "target": "test_formula_binary_test_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -732,9 +421,9 @@
       "source_file": "test/formula_binary_test.rb",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "test_formula_binary_test",
-      "target": "test_formula_binary_test_version"
+      "target": "test_formula_binary_test_version",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -742,141 +431,11 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
-      "source": "users_phranck_developer_tools_cli_homebrew_grat_readme_md",
-      "target": "homebrew_grat_readme_homebrew_tap_for_grat",
+      "source": "readme",
+      "target": "readme_homebrew_tap_for_grat",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/formula_binary_test.rb",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_formula_binary_test_formula_contract",
-      "target": "formula_grat_bottle_declaration"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_bottle_artifacts",
-      "target": "formula_grat_bottle_declaration"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_publish_publish_workflow",
-      "target": "workflows_publish_pr_pull_job"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_publish_pr_pull_job",
-      "target": "workflows_publish_bottle_pull"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_publish_pr_pull_job",
-      "target": "workflows_publish_commit_push"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_publish_bottle_pull",
-      "target": "workflows_publish_commit_push"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": ".github/workflows/publish.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_publish_bottle_pull",
-      "target": "workflows_tests_bottle_artifacts"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_test_workflow",
-      "target": "workflows_tests_linux_test_job"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_test_workflow",
-      "target": "workflows_tests_macos_test_job"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_macos_test_job",
-      "target": "workflows_tests_bottle_artifacts"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_macos_test_job",
-      "target": "workflows_tests_formula_validation"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_linux_test_job",
-      "target": "workflows_tests_bottle_artifacts"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/workflows/tests.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "workflows_tests_linux_test_job",
-      "target": "workflows_tests_formula_validation"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0c76849f8e6c4ed673c664c046ff752a6c89feb7"
+  "built_at_commit": "9be0846ee517077dd821d7b2d2c355b6f621b539"
 }
