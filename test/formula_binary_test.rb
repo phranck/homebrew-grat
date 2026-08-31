@@ -92,14 +92,14 @@ end
 load File.expand_path("../Formula/grat.rb", __dir__)
 
 expected_bottle_tags = [:arm64_tahoe, :arm64_linux, :tahoe, :x86_64_linux]
-expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.3.2.tar.gz"
-expected_source_checksum = "ccaa040e91d90d879f357ebe6c3e9ebd52009d14f5f1ee8102f3de5e0d2844b2"
-expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.3.2"
+expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.4.0.tar.gz"
+expected_source_checksum = "6f5a20c226dec0edbf88644886d06d49333b858dafef2cc5571c892b74350087"
+expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.4.0"
 expected_bottle_checksums = {
-  arm64_tahoe:  "13eea60513bf77006e3e2d6717e90b801bc7b48eea11f5675f0b0c5fbd7e5085",
-  arm64_linux:  "b0937b518f2d285028f47b9acd4b53b20294033bf0f86bb8ec396055e59e6c7a",
-  tahoe:        "00fbee688f618e55c1acff7510f773ac39e6a365196262002b27fd1ae51f59c9",
-  x86_64_linux: "d8302348ebb625eeaf1b29e9c9f378a869f5a35e935996e6cbe44f53d518bd06",
+  arm64_tahoe:  "88fb15998b9f0c8bfdfa8d89848598c3a650875743a799548d11395e71ef70ae",
+  arm64_linux:  "5d596be72f81b2bfc68e072364a5733e7e781af129574bebbeada980324e65db",
+  tahoe:        "ececb0f9616cd699b07426dc78d988c3df6ef92ccd34e47b27360005fc61b9b9",
+  x86_64_linux: "88ec3faacc1141ed7d536885806a72d6bf04057290b5d8a5e8db5a12065b976b",
 }.freeze
 
 Formula::BinaryTest.assert_equal [{ "go" => :build }], Grat.dependencies,
@@ -111,6 +111,18 @@ Formula::BinaryTest.assert_equal [expected_source_checksum], Grat.checksums,
                                  "formula source checksum must match the published tag"
 Formula::BinaryTest.assert_equal expected_bottle_root, Grat.bottle_root_url,
                                  "bottles must come from the matching grat release"
+
+# The formula generates the manual page from the binary it just built, so a
+# source build without these two lines installs a binary with no manual and
+# nothing else says so. The stub cannot run the install block, so the source is
+# read instead.
+formula_source = File.read(File.expand_path("../Formula/grat.rb", __dir__))
+[
+  ['Utils.safe_popen_read(bin/"grat", "manual")', "formula must generate the manual from the built binary"],
+  ['man1.install "grat.1"', "formula must install the manual page"],
+].each do |needle, message|
+  Formula::BinaryTest.assert_equal true, formula_source.include?(needle), message
+end
 
 bottle_checksums = Grat.bottle_checksums || []
 Formula::BinaryTest.assert_equal 1, bottle_checksums.length,
