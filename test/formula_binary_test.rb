@@ -92,14 +92,14 @@ end
 load File.expand_path("../Formula/grat.rb", __dir__)
 
 expected_bottle_tags = [:arm64_tahoe, :arm64_linux, :tahoe, :x86_64_linux]
-expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.4.0.tar.gz"
-expected_source_checksum = "6f5a20c226dec0edbf88644886d06d49333b858dafef2cc5571c892b74350087"
-expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.4.0"
+expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.5.0.tar.gz"
+expected_source_checksum = "8825d5bfcde2d830ed45c657548dc019e23d4d6f8e8fc5c48b944fd3456a76a3"
+expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.5.0"
 expected_bottle_checksums = {
-  arm64_tahoe:  "88fb15998b9f0c8bfdfa8d89848598c3a650875743a799548d11395e71ef70ae",
-  arm64_linux:  "5d596be72f81b2bfc68e072364a5733e7e781af129574bebbeada980324e65db",
-  tahoe:        "ececb0f9616cd699b07426dc78d988c3df6ef92ccd34e47b27360005fc61b9b9",
-  x86_64_linux: "88ec3faacc1141ed7d536885806a72d6bf04057290b5d8a5e8db5a12065b976b",
+  arm64_tahoe:  "a867246779ee4e19858b591b16cee3d830db48f4d287dacaa854a094985951f4",
+  arm64_linux:  "f25e2764107dc1209ba67b49ba1a4f92d93b3f7dcc964873c977372370a88ea3",
+  tahoe:        "0f38774e57256c2fd2cbbc86e383893145ab2d3beb8ed8a2a275e015b87a14d8",
+  x86_64_linux: "7ab88aff7f5451f3fc4a02a021aad8ec26137e9cf9e5ac4675817c975b1bf1ca",
 }.freeze
 
 Formula::BinaryTest.assert_equal [{ "go" => :build }], Grat.dependencies,
@@ -118,8 +118,10 @@ Formula::BinaryTest.assert_equal expected_bottle_root, Grat.bottle_root_url,
 # read instead.
 formula_source = File.read(File.expand_path("../Formula/grat.rb", __dir__))
 [
-  ['Utils.safe_popen_read(bin/"grat", "manual")', "formula must generate the manual from the built binary"],
-  ['man1.install "grat.1"', "formula must install the manual page"],
+  ['Utils.safe_popen_read(bin/"grat", "manual")', "formula must generate the command page"],
+  ['Utils.safe_popen_read(bin/"grat", "manual", "grat.config")', "formula must generate the config page"],
+  ['man1.install "grat.1"', "formula must install the command page"],
+  ['man7.install "grat.config.7"', "formula must install the config page"],
 ].each do |needle, message|
   Formula::BinaryTest.assert_equal true, formula_source.include?(needle), message
 end
