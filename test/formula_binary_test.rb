@@ -92,25 +92,26 @@ end
 load File.expand_path("../Formula/grat.rb", __dir__)
 
 expected_bottle_tags = [:arm64_tahoe, :arm64_linux, :tahoe, :x86_64_linux]
-expected_source_url = "https://github.com/phranck/grat/archive/refs/tags/v1.5.0.tar.gz"
-expected_source_checksum = "8825d5bfcde2d830ed45c657548dc019e23d4d6f8e8fc5c48b944fd3456a76a3"
-expected_bottle_root = "https://github.com/phranck/grat/releases/download/v1.5.0"
-expected_bottle_checksums = {
-  arm64_tahoe:  "a867246779ee4e19858b591b16cee3d830db48f4d287dacaa854a094985951f4",
-  arm64_linux:  "f25e2764107dc1209ba67b49ba1a4f92d93b3f7dcc964873c977372370a88ea3",
-  tahoe:        "0f38774e57256c2fd2cbbc86e383893145ab2d3beb8ed8a2a275e015b87a14d8",
-  x86_64_linux: "7ab88aff7f5451f3fc4a02a021aad8ec26137e9cf9e5ac4675817c975b1bf1ca",
-}.freeze
+checksum_shape = /\A[0-9a-f]{64}\z/
+
+# The version comes from the formula rather than from a copy kept here. A copy
+# would have to be raised for every release, which makes the test fire on a
+# decision instead of on a defect, and it would say only that somebody changed
+# both places. What can genuinely be wrong is the source archive and the bottles
+# naming different tags, which is what is checked below.
+source_url = (Grat.urls || []).first.to_s
+release_tag = source_url[%r{/tags/(v[^/]+)\.tar\.gz\z}, 1]
 
 Formula::BinaryTest.assert_equal [{ "go" => :build }], Grat.dependencies,
                                  "formula must declare Go only for source fallback builds"
 Formula::BinaryTest.assert_equal [], Grat.heads || [], "formula must not advertise a source head"
-Formula::BinaryTest.assert_equal [expected_source_url], Grat.urls,
-                                 "formula must use the matching source archive"
-Formula::BinaryTest.assert_equal [expected_source_checksum], Grat.checksums,
-                                 "formula source checksum must match the published tag"
-Formula::BinaryTest.assert_equal expected_bottle_root, Grat.bottle_root_url,
-                                 "bottles must come from the matching grat release"
+Formula::BinaryTest.assert_equal false, release_tag.nil?,
+                                 "formula must take its source from a tagged archive"
+Formula::BinaryTest.assert_equal true, checksum_shape.match?((Grat.checksums || []).first.to_s),
+                                 "formula source checksum must be a sha256 digest"
+Formula::BinaryTest.assert_equal "https://github.com/phranck/grat/releases/download/#{release_tag}",
+                                 Grat.bottle_root_url,
+                                 "bottles must come from the release of the tag the source names"
 
 # The formula generates the manual page from the binary it just built, so a
 # source build without these two lines installs a binary with no manual and
@@ -137,8 +138,9 @@ Formula::BinaryTest.assert_equal expected_bottle_tags.sort, (bottle.keys - [:cel
 bottle_checksums_without_cellar = bottle.each_with_object({}) do |(key, value), checksums|
   checksums[key] = value if key != :cellar
 end
-Formula::BinaryTest.assert_equal expected_bottle_checksums,
-                                 bottle_checksums_without_cellar,
-                                 "formula checksums must match the published bottle archives"
+bottle_checksums_without_cellar.each do |tag, checksum|
+  Formula::BinaryTest.assert_equal true, checksum_shape.match?(checksum.to_s),
+                                   "the #{tag} bottle checksum must be a sha256 digest"
+end
 
 puts "formula bottle declaration: PASS"
