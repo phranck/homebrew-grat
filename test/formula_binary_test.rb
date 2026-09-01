@@ -118,8 +118,8 @@ Formula::BinaryTest.assert_equal expected_bottle_root, Grat.bottle_root_url,
 # read instead.
 formula_source = File.read(File.expand_path("../Formula/grat.rb", __dir__))
 [
-  ['Utils.safe_popen_read(bin/"grat", "manual")', "formula must generate the command page from the built binary"],
-  ['Utils.safe_popen_read(bin/"grat", "manual", "grat.config")', "formula must generate the config page from the built binary"],
+  ['Utils.safe_popen_read(bin/"grat", "manual")', "formula must generate the command page"],
+  ['Utils.safe_popen_read(bin/"grat", "manual", "grat.config")', "formula must generate the config page"],
   ['man1.install "grat.1"', "formula must install the command page"],
   ['man7.install "grat.config.7"', "formula must install the config page"],
 ].each do |needle, message|
