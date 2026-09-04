@@ -7,8 +7,50 @@ on:
   pull_request:
 
 jobs:
+  # The tap's syntax and style are a property of the Ruby in this repository, so
+  # they are checked in one place. Running the same check on every platform
+  # answered one question three times, and because it runs before the formula
+  # test in the same job, a fault in it took that test down as well. On
+  # 4 September 2026 the macOS Intel runner could not resolve gmplib.org, so
+  # brew style could not install shellcheck, and the formula was never installed
+  # on that platform at all.
+  tap-syntax:
+    name: tap syntax
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/homebrew/brew:main
+      options: --privileged
+    permissions:
+      actions: read
+      checks: read
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@1f8e202ffddf94def7f42f6fa3a482e821489f9c # 2026.07.10.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cache Homebrew Bundler RubyGems
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: ${{ steps.set-up-homebrew.outputs.gems-path }}
+          key: tap-syntax-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
+          restore-keys: tap-syntax-rubygems-
+
+      - run: brew test-bot --only-cleanup-before
+
+      - run: brew test-bot --only-setup
+
+      - run: brew test-bot --only-tap-syntax
+
+  # These install the formula for real, which is the only thing that proves the
+  # bottles are reachable and their digests right. That is what the release
+  # process waits for before the tap is merged, so nothing else belongs in here.
   test-bot-macos:
     name: ${{ matrix.os }}
+    if: github.event_name == 'pull_request'
     strategy:
       matrix:
         os: [macos-15-intel, macos-26]
@@ -36,12 +78,10 @@ jobs:
 
       - run: brew test-bot --only-setup
 
-      - run: brew test-bot --only-tap-syntax
       - run: brew test-bot --only-formulae
-        if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
-        if: always() && github.event_name == 'pull_request'
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: bottles_${{ matrix.os }}
@@ -49,6 +89,7 @@ jobs:
 
   test-bot-linux:
     name: ubuntu-latest
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/homebrew/brew:main
@@ -76,12 +117,10 @@ jobs:
 
       - run: brew test-bot --only-setup
 
-      - run: brew test-bot --only-tap-syntax
       - run: brew test-bot --only-formulae
-        if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
-        if: always() && github.event_name == 'pull_request'
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: bottles_ubuntu-latest
