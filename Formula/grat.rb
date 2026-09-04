@@ -1,17 +1,17 @@
 class Grat < Formula
   desc "Run approved local development tasks safely"
   homepage "https://github.com/phranck/grat"
-  url "https://github.com/phranck/grat/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "fcfc81e482449985fba270dcd9e2f0f5e3707b75ad5221164a8610073ab0c94d"
+  url "https://github.com/phranck/grat/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "3721fe2a76dedc76df9567a3f4fe8468e903c10de4c987021e92475baa7c1611"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/phranck/grat/releases/download/v2.1.0"
+    root_url "https://github.com/phranck/grat/releases/download/v2.2.0"
     sha256 cellar:       :any_skip_relocation,
-           arm64_tahoe:  "6bbf4e337649fea567ade9953eb8f355cefa9deaa3e5d2ff9a4640660c750f6e",
-           arm64_linux:  "91caa0537c8dd675fe979334f88cc78220c1ab95031f65fa8a0e56e5204cbdf0",
-           tahoe:        "b1dce3d4394103c1818c8cff21a1bed5f51cf4d481e16c8390f9c536bc34d209",
-           x86_64_linux: "d227e21722fcca0649625a48304f873f0a3d754e6173a57d86dda05dccb7732d"
+           arm64_tahoe:  "ad69c21cfc37ddbe50138ab9445d9f39f6c1e7269d299055abca997db7f3197f",
+           arm64_linux:  "d40f1ce9f8cdb121cf5cd4f3c7eec2a5f02db0bd53c7afc62ce27daf14397ed4",
+           tahoe:        "55b62fe8883cded9c62bd808b8663f37e67148fdb679653fa647feaed2dca22e",
+           x86_64_linux: "0a7b1dfe1c9d2a74dbb6b7b28d885f27ebb9318cd65990c777ade44ce4a8d0e4"
   end
 
   depends_on "go" => :build
