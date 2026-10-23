@@ -2,10 +2,7 @@
 # frozen_string_literal: true
 
 # The class below stubs the parts of the Formula DSL that Formula/grat.rb calls, so
-# the formula can be loaded and asserted without Homebrew. RuboCop reads those stubs
-# as redefinitions of the real Formula methods, which is exactly what they are meant
-# to be here.
-# rubocop:disable Lint/DuplicateMethods
+# the formula can be loaded and asserted without Homebrew.
 class Formula
   class << self
     attr_reader :urls, :checksums, :dependencies, :heads, :bottle_root_url,
@@ -87,7 +84,6 @@ class Formula
     end
   end
 end
-# rubocop:enable Lint/DuplicateMethods
 
 load File.expand_path("../Formula/grat.rb", __dir__)
 
